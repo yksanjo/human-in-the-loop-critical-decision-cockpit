@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "human_in_the_loop_critical_decision_cockpit"
+version = "0.1.0"
+description = "Provide approval gates for high-impact AI-assisted decisions."
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
